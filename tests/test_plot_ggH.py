@@ -8,9 +8,9 @@ required_keys = ['ggH_pt_1', 'ggH_pt_2']
 
 print('\n'.join(keys))
 for required_key in required_keys:
-        if not required_key in keys:
-	            print(f'Required key not found. {required_key}')
-		    sys.exit(1)
+    if not required_key in keys:
+	print(f'Required key not found. {required_key}')
+	sys.exit(1)
 
 integral = f.ggH_pt_1.Integral()
 if abs(integral - 222.88716647028923) > 0.0001:
